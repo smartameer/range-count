@@ -1,0 +1,60 @@
+body {
+    background: #fdfdfd;
+}
+.container {
+    max-width: 90%;
+    width: 90%;
+    margin-top: 100px;
+}
+.leader {
+    font-size: large;
+}
+.row.header > .columns {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #666;
+    height: 90px;
+    background: #fff;
+    padding: 15px 0 0 25px;
+}
+section > a, .menu a {
+   text-decoration: none;
+}
+section > a > h3 {
+    color: #222;
+    text-decoration: none;
+}
+section > a .mega-octicon {
+    display: none;
+    color: #1eaedb;
+}
+section > a:hover .mega-octicon,
+section > a:focus .mega-octicon {
+    display: inline;
+    font-size: xx-large;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+.row.content > .menu .mega-octicon,
+.row.content > .menu .octicon {
+    margin-right: 10px;
+}
+.range-example {
+    position: relative;
+    padding-top: 25px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+@media (min-width: 750px) {
+    .row.content > .menu {
+        position: fixed;
+        top: 100px;
+        right: 4%;
+        z-index: 200;
+    }
+}

@@ -1,72 +1,146 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Range-count by smartameer</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Range Count</title>
+    <meta name="description" content="Html input tag type range's count in change of slider in non-supporting browser">
+    <meta name="author" content="smartameer">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.1.0/octicons.css">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
   <body>
-      <div class="wrapper">
-          <header>
-              <h1>Range-count</h1>
-              <p>Html &lt;input type=&quot;range&quot;&gt; tag&#39;s count in change of slider in non-supporting browser</p>
-              <ul>
-                  <li><a href="https://github.com/smartameer/range-count/zipball/master">Download <strong>ZIP File</strong></a></li>
-                  <li><a href="https://github.com/smartameer/range-count/tarball/master">Download <strong>TAR Ball</strong></a></li>
-                  <li><a href="https://github.com/smartameer/range-count">View On <strong>GitHub</strong></a></li>
-              </ul>
-          </header>
-          <section>
-              <h3>
-                  <a id="description" class="anchor" href="#description" aria-hidden="true"><span class="octicon octicon-link"></span></a>
-                  Description
-              </h3>
-              <p> Except Internet Explorer, no other browser shows the current count on sliding the slider. This plugin will allow the range slider to show current count in other browsers irresptive of it's position.</p>
-
-              <h3>
-                  <a id="clone" class="anchor" href="#clone" aria-hidden="true"><span class="octicon octicon-link"></span></a>
-                  Clone
-              </h3>
-
-              <p>Soon coming to bower ...</p>
-              <p>As of now you can clone the repository from <code>https://github.com/smartameer/range-count.git</code> and use it in your site.</p>
-              <h3>
-                  <a id="install" class="anchor" href="#install" aria-hidden="true"><span class="octicon octicon-link"></span></a>
-                  Install
-              </h3>
-
-              <p>After cloning repository, just do a <code>bower install</code> in the repository as this library is dependednt on <a href="http://jquery.com" target="_blank">jQuery</a></p>
-
-              <h3>
-                  <a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-              <p>Add this to your html file where you are going to use the range-count </p>
-              <pre>
-                &lt;script src="jquery.min.js" type="text/javascript"&gt;&lt;/script&gt;
-                &lt;script src="range-count/dist/jquery-range-count.min.js" type="text/javascript"&gt;&lt;/script&gt;
-              </pre>
-              <pre>
-                &lt;script&gt;
-                  $(document).ready(function() {
-
-                     $("input[type='range']").rangeCount();
-
-                  });
-                &lt;/script&gt;
-              </pre>
-          </section>
-          <footer>
-              <p>Maintained by <a href="https://github.com/smartameer">smartameer</a></p>
-              <p><small>Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-          </footer>
+    <div class="container">
+      <div class="row header">
+        <div class="twelve columns">
+          <h2>Range Count</h2>
+        </div>
       </div>
-      <script src="javascripts/scale.fix.js"></script>
+      <div class="row content u-full-width">
+        <div class="nine columns">
+          <section id="introduction">
+            <a href="#introduction">
+              <h3>Introduction <span class="mega-octicon octicon-link u-pull-right"></span></h3>
+            </a>
+            <p class="leader">Except Internet Explorer, no other browser shows the current count on sliding the slider.
+            This plugin will allow the range slider to show current count in other browsers irresptive of it's position.</p>
+          </section>
+          <section id="installation">
+            <a href="#installation">
+              <h3>Installation <span class="mega-octicon octicon-link u-pull-right"></span></h3>
+            </a>
+            <p class="leader">You can now install by using bower :</p>
+            <pre>
+              <code>> bower install range-count</code>
+            </pre>
+            <p class="leader">(or) clone by using git :</p>
+            <pre>
+              <code>> git clone https://github.com/smartameer/range-count.git // https url
+> git clone git@github.com:smartameer/range-count.git     // ssh url</code>
+            </pre>
+          </section>
+          <section id="usage">
+            <a href="#usage">
+              <h3>Usage <span class="mega-octicon octicon-link u-pull-right"></span></h3>
+            </a>
+            <p class="leader">Include Range Count library in your html
+            code.<br/>
+            Note :- <a href="http://jquery.com" target="_new">JQuery</a> is a dependency.
+            </p>
+            <pre>
+              <code>&lt;script type="text/javascript" src="jquery-range-count.min.js"&gt;&lt;/script&gt;</code>
+            </pre>
+            <p class="leader">Html Snippet</p>
+            <pre>
+              <code>&lt;input type="range" id="myrange" max="100" min="1"/&gt;</code>
+            </pre>
+            <p class="leader">Jquery Snippet</p>
+            <pre>
+              <code>$("#myrange").rangeCount();</code>
+            </pre>
+          </section>
+          <section id="demo">
+            <a href="#demo">
+              <h3>Demo <span class="mega-octicon octicon-link u-pull-right"></span></h3>
+            </a>
+            <p class="leader">To check slide the range below</p>
+            With step in input range
+            <div class="range-example u-full-width">
+              <input id="demo-range-1" type="range" step="1" min="1" max="100" style="width: 50%" value="1" />
+            </div>
+            Without step in input range
+            <div class="range-example u-full-width">
+              <input id="demo-range-2" type="range" min="1" max="100" class="u-full-width" />
+            </div>
+          </section>
+        </div>
+        <div id="navigation" class="three columns menu">
+          <h4><a href="#introduction"><span class="mega-octicon octicon-book"></span> Introduction</a></h4>
+          <h4><a href="#installation"><span class="mega-octicon octicon-terminal"></span> Installation</a></h4>
+          <h4><a href="#usage"><span class="mega-octicon octicon-gist"></span> Usage</a></h4>
+          <h4><a href="#demo"><span class="mega-octicon octicon-hubot"></span> Demo</a></h4>
+          <a href="https://github.com/smartameer/range-count" class="button u-full-width">
+             <span class="octicon octicon-mark-github"></span> View on Github
+          </a>
+          <a href="https://github.com/smartameer/range-count/zipball/master" class="button u-full-width">
+             <span class="octicon octicon-desktop-download"></span> Download Zip File
+          </a>
+          <a href="https://github.com/smartameer/range-count/tarball/master" class="button u-full-width">
+             <span class="octicon octicon-desktop-download"></span> Download Tar File
+          </a>
+        </div>
+      </div>
+    </div>
+    <footer class="container">
+      <div class="row">
+        <div class="u-full-width">
+          <p>Raise Issues at <a href="https://github.com/smartameer/range-count/issues" target="_new">Github Issues</a></p>
+          <p>Theme used from <a href="http://getskeleton.com/" target="_new">Skeleton</a></p>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://raw.githubusercontent.com/smartameer/range-count/master/src/jquery-range-count.js"></script>
+    <script>
+      $(document).ready(function() {
+          $('section > a, #navigation h4 > a').unbind('click').click(function(e){
+              e.preventDefault();
+              var padding = 91,
+                  target = this.hash;
+              $('html, body').animate({
+                  scrollTop: $($(this).attr('href')).offset().top - padding
+              }, 400, 'swing', function () {
+                  //@todo change the hash
+                  //window.location.hash = target;
+                  //return false;
+              });
+              
+              return false;
+          });
+          $("#demo-range-1").rangeCount();
+          $("#demo-range-2").rangeCount();
+      });
+      $(window).on('load', function() {
+         var hashUri = window.location.href;
+         setTimeout(function() {
+             if (new RegExp(/\#/).test(hashUri)) {
+                 var offset = $(window.location.hash).offset(),
+                     padding = 91;
+                 $('html, body').animate({
+                     scrollTop: offset.top - padding
+                 }, 1);
+             }
+         }, 2);
+      });
+      if (window.location.hash) {
+          setTimeout(function() {
+              window.scrollTo(0, 0);
+          }, 1);
+      }
+   </script>
   </body>
 </html>
