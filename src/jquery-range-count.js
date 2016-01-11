@@ -33,7 +33,7 @@
                 inputRangeValue = element.val();
             var inputRangePositionLeft = inputRangePosition.left,
                 // placing the count inbetween the range co-ordinates
-                mousePositionTop = event.pageY - $(this).outerHeight() - 2,
+                mousePositionTop = jQuery(window).scrollTop() - event.pageY - $(this).outerHeight() - 2,
                 mousePositionLeft = event.pageX - inputRangeOffsetLeft;
             var rangePlaceHolder = jQuery('<span></span>').attr({
                 'id': 'range-count-thumbnail',
