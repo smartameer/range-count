@@ -1,0 +1,26 @@
+{
+    "name": "range-count",
+    "version": "1.0.0",
+    "description": "Range slider to show current count for input slider element",
+    "main": "dist/jquery-range-count.min.js",
+    "author": {
+        "name": "Pradeep Patro",
+        "email": "smartameer@icloud.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/smartameer/range-count.git"
+    },
+    "keywords": [
+        "input",
+        "jquery",
+        "range",
+        "thumb",
+        "count"
+    ],
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/smartameer/range-count/issues"
+    },
+    "homepage": "https://github.com/smartameer/range-count#readme"
+}

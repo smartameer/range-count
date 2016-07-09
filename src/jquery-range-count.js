@@ -3,7 +3,7 @@
  *                count on sliding the slider. This plugin will allow the range
  *                slider to show current count in other browsers irresptive of
  *                it's position.
- * @author: Pradeep Patro <pradeeppatro16@gmail.com>
+ * @author: Pradeep Patro <smartameer@icloud.com>
  * @version: 1.0.0
  */
 (function ($) {

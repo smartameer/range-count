@@ -1,28 +1,30 @@
 {
-  "name": "range-count",
-  "version": "0.0.1",
-  "homepage": "https://github.com/smartameer/range-count",
-  "authors": [
-    "smartameer <pradeeppatro16@gmail.com>"
-  ],
-  "description": "Html <input type=\"range\"> tag's count in change of slider in non-supporting browser",
-  "main": "src/jquery-range-count.min.js",
-  "keywords": [
-    "input",
-    "jquery",
-    "range",
-    "thumb",
-    "count"
-  ],
-  "license": "MIT",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "jquery": "~2.1.4"
-  }
+    "name": "range-count",
+    "description": "Range slider to show current count for input slider element",
+    "version": "1.0.0",
+    "homepage": "https://github.com/smartameer/range-count#readme",
+    "author": {
+        "name": "Pradeep Patro",
+        "email": "smartameer@icloud.com"
+    },
+    "description": "Html <input type=\"range\"> tag's count in change of slider in non-supporting browser",
+    "main": "dist/jquery-range-count.min.js",
+    "keywords": [
+        "input",
+        "jquery",
+        "range",
+        "thumb",
+        "count"
+    ],
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "jquery": "~2.1.4"
+    }
 }
